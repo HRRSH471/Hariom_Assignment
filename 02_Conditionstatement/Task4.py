@@ -5,3 +5,7 @@
 # ○ Calculate the area of the circle using the formula: Area = π *
 # radius^2.
 # ○ Display the calculated area
+radius=int(input("Enter the radius of circle "))
+if radius>=0:
+    area_of_circle=22/7*radius**2
+print(f"Are of Circler with Radius {radius}, is {area_of_circle} ")
