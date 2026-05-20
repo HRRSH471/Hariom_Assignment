@@ -7,3 +7,7 @@
 # age.
 # ○ Display the number of years left until retirement or a message if the user
 # has already reached retirement age
+age=int(input(f"Ener your age ",))
+if age<=65:
+    req_age=65-age
+    print(f"Age Required to Reach Retirement Age", req_age)
