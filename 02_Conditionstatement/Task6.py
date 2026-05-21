@@ -9,3 +9,20 @@
 # 1. Output:
 # ○ Display "Loan Approved" if the applicant meets all the conditions.
 # ○ Otherwise display "Loan Rejected".
+age=input("Enter your age between 18 to 60: ")
+monthly_income=int(input("Enter your month income:  "))
+credit_score= int(input("Enter your credit Score: "))
+
+outstanding_debt=int(input("Enter the outstanding  debt amount"))
+if monthly_income  >=25000 and credit_score>=700 and outstanding_debt <= 10000:
+    # outstanding_debt=int(input("Enter the outstanding  debt amount"))
+# elif outstanding_debt <= 10000:
+    print("Your application is approved")   
+else:             
+    print ("Your loan application rejected")
+   
+     
+
+    
+
+
