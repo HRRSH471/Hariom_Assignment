@@ -19,3 +19,10 @@
 # Output:
 # ● If the student meets all three conditions print "Eligible for Interview".
 # ● If the student fails to meet any of the conditions print "Not Eligible for Interview".
+academic_score=float(input("Enter the academic score in percentage :"))
+attendance_percentage=float(input("Enter the attendance percentage :"))
+extracurriculam_activities=input("Participate in extracurriculum activitis.? (yes/no): ")
+if academic_score >= 60 and attendance_percentage >= 75 and extracurriculam_activities == "yes":
+    print("Eligible for Interview")
+else:
+    print ("Your are not eligible for interview")    
