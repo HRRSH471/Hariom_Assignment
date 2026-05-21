@@ -56,25 +56,19 @@
 # Enter years of experience: 3
 # Junior employee
 # Salary: 30000
-marks = float(input("Enter your marks: "))
-
-if marks >= 90 and marks <= 100:
-    print("Grade: A")
-
-elif marks >= 80 and marks <= 89:
-    print("Grade: B")
-
-elif marks >= 70 and marks <= 79:
-    print("Grade: C")
-
-elif marks >= 60 and marks <= 69:
-    print("Grade: D")
-
-elif marks >= 50 and marks <= 59:
-    print("Grade: E")
-
-elif marks >= 0 and marks <= 49:
-    print("Grade: F")
-
+experience=int(input("Enter your working Experience :"))
+if experience >= 10:
+    print("Senior Employee")
+    salary=80000
+    if experience > 15:
+        print("Experience exceeds 15 years. Bonus added.")
+        salary += 5000
+    print(f"Salary: {salary}")
+elif experience >= 5:
+    print("Mid-Level Employee")
+    salary=50000
+    print(f"Salary: {salary}")
 else:
-    print("Invalid marks")
+    print("Junior Employee")
+    salary=30000
+    print(f"Salary: {salary}")
