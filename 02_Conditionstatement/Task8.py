@@ -11,3 +11,8 @@
 # check.
 # 4. Print a message to inform the user if their email is eligible for registration
 # or not
+email=input("Enter your email address ")
+if "@gmail.com" in email:
+    print("Your eligible for registeration")
+else:
+    print("You are not eligible for registeration")
