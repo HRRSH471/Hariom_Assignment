@@ -14,5 +14,13 @@
 # 3. Output:
 # ○ If both the username and password match the predefined valid credentials
 # display "Authentication successful."
-# ○ If either the username or the password does not match display
+# ○ If either the username or the password does not match displayus
 # "Authentication failed."
+username1="user1"
+username1_password1="pass@123"
+username2=input(" Enter your user name")
+username2_password2=input("Enter your password")
+if username1 == username2 and username1_password1 == username2_password2:
+   print("you are valid user")
+else:
+   print("you are not a valid user")
