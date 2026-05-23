@@ -26,10 +26,10 @@
 # UPSC."
 # ■ If failed, display "You failed the Interview."
 # ○ Final Output: Use nested conditional statements to simulate the entire process.
-Name=input("Enter Your Name")
+Name=input("Enter Your Name : ")
 Age=int(input("Enter Your Age : "))
-Graduation_status=(input("Are you graduate yes/no"))
-Nationality=input("Enter your nationality")
+Graduation_status=(input("Are you graduate yes/no : "))
+Nationality=input("Enter your nationality : ")
 if Age>=21 and Age<=32 and Graduation_status=="yes" and Nationality=="indian":
     print("You are eligible for prelims")
     prelims_marks=int(input("Enter your prelims marks out of 200: "))
@@ -50,15 +50,5 @@ if Age>=21 and Age<=32 and Graduation_status=="yes" and Nationality=="indian":
 else:
     print("You are not eligible for UPSC")        
 
-
-            
-
-
-
-
-
-
-else:
-    print("You are not eligible for prelims")
 
 
