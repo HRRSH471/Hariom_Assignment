@@ -31,4 +31,21 @@
 # nice day!"
 # 4. If the user enters invalid credentials or an invalid choice, display appropriate error
 # messages.
-# ___________________________________________
+phone_number="123456789"
+otp="1234"
+Email="user@example.com"
+Password="password123"
+exit="Exit"
+usenumber=int(input("Enter Your Phone Number : "))
+userotp=int(input("Enter Your OTP : "))
+useremail=input("Enter Your Email ID : ")
+userpswd=input("Enter Your Password : ")
+userexit=input("Enter Exit to Terminate the Program")
+if phone_number==usenumber and otp==userotp:
+    print("You are Login Successfuly with Phone")
+elif Email==useremail and Password==userpswd:
+    print("You are Login Successfuly with Email")
+elif exit==userexit:
+    print("You are Terminate from program")
+else:
+    print("Your Enter the the Invalid Credential")
