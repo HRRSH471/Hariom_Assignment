@@ -30,3 +30,70 @@
 # 5. Game Ending:
 # ○ The game will end when all the questions have been answered or skipped. The
 # user should receive their total score and a summary of their performance.
+questions = [
+    {
+        "question": "1. What is the capital of India?",
+        "options": ["A. Delhi", "B. Mumbai", "C. Chennai", "D. Kolkata"],
+        "answer": "A"
+    },
+
+    {
+        "question": "2. Which language is used in DevOps automation?",
+        "options": ["A. HTML", "B. Python", "C. CSS", "D. Paint"],
+        "answer": "B"
+    },
+
+    {
+        "question": "3. Who developed Python?",
+        "options": ["A. James Gosling", "B. Dennis Ritchie", "C. Guido van Rossum", "D. Elon Musk"],
+        "answer": "C"
+    },
+
+    {
+        "question": "4. Which command is used to check current directory in Linux?",
+        "options": ["A. ls", "B. cd", "C. pwd", "D. mkdir"],
+        "answer": "C"
+    },
+
+    {
+        "question": "5. What is 5 + 5 ?",
+        "options": ["A. 15", "B. 20", "C. 5", "D. 10"],
+        "answer": "D"
+    }
+]
+
+score = 0
+correct = 0
+wrong = 0
+skipped = 0
+
+print("===== Welcome to KBC Game =====")
+
+for q in questions:
+
+    print("\n" + q["question"])
+
+    for option in q["options"]:
+        print(option)
+
+    user_answer = input("Enter option (A/B/C/D) or S to Skip: ").upper()
+
+    if user_answer == "S":
+        print("Question Skipped")
+        skipped += 1
+
+    elif user_answer == q["answer"]:
+        print("Correct Answer")
+        score += 10
+        correct += 1
+
+    else:
+        print("Wrong Answer")
+        wrong += 1
+
+print("\n===== Game Over =====")
+
+print("Total Score :", score)
+print("Correct Answers :", correct)
+print("Wrong Answers :", wrong)
+print("Skipped Questions :", skipped)
