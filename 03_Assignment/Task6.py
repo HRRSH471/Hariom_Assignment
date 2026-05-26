@@ -1,18 +1,6 @@
-#Write a Python program to generate the Fibonacci sequence up to a specified
-# number of terms.
-
-
-num = int(input("Enter how many Fibonacci numbers you want: "))
-
-a = 0
-b = 1
-
-print("Fibonacci Series:")
-
-for i in range(num):
-
-    print(a)
-
-    c = a + b
-    a = b
-    b = c
+start_point=int(input("Enter the starting number : "))
+End_point=int(input("Enter the starting number : "))
+sum=1
+for i in range(start_point+1,End_point):
+    sum*=i
+print(sum)
